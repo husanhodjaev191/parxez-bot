@@ -12,8 +12,8 @@ from aiogram.fsm.storage.memory import MemoryStorage
 # ─────────────────────────────────────────
 # НАСТРОЙКИ
 # ─────────────────────────────────────────
-BOT_TOKEN = os.getenv("8683685335:AAE3u6IubzD5ptuINBqWDnILPCQ5tI1q_HM")
-ADMIN_ID = int(os.getenv("5002077742", "123456789"))
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+ADMIN_ID = int(os.getenv("ADMIN_ID", "123456789"))
 
 if not BOT_TOKEN:
     raise ValueError("❌ BOT_TOKEN не найден! Добавь его в Railway Variables")
